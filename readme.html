@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET2INSIGHT Snowflake Integration 1.00b</title>
+
+g2iSnowflake --config="c:\g2iSnowflake\g2isnowflake.json"  --etl="c:\g2iSnowflake\EAM\Reporting.uspCreateFactWorkorder.script" --temp="c:\tempworkfolder"
+
+    --config        Specify location of the configuration file containing:
+                    - SQL Server parameters
+                    - Snowflake credentials and parameters
+                    - Setting to override the --ETL setting (preliminary)
+    --etl           Specify location of script file for ETL execution
+                    - JSON file with specification of what tables to push into snowflake and the commands necessary for the push
+    --temp          Specify location of temp folder where compressed data files can be stored prior to uploading to Azure Blob
+
+</head>
+<body>
+
+# pip install snowflake-connector-python
+# pip install -r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/v2.4.1/tested_requirements/requirements_36.reqs
+# pip install azure-storage-blob
+# pip install argparse
+
+</body>
+</html>
