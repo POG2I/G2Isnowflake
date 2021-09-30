@@ -1,0 +1,7 @@
+pyodbc
+snowflake-connector-python
+packaging
+pandas
+simplejson
+json
+logging
